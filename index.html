@@ -50,7 +50,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<div id="kt_header_mobile" class="header-mobile align-items-center header-mobile-fixed">
 			<!--begin::Logo-->
 			<span>
-				 <h5 class="text-white font-weight-bold mt-2 mb-2 mr-5">S991 - Eric S</h5>
+				 <h5 class="text-white font-weight-bold mt-2 mb-2 mr-5" id="SpanEmployeeNumber">. . . </h5>
 			</span>
 			<!--end::Logo-->
 			<!--begin::Toolbar-->
@@ -58,20 +58,20 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!--begin::Aside Mobile Toggle-->
 				<!--end::Aside Mobile Toggle-->
 				<!--begin::Header Menu Mobile Toggle-->
-				<button class="btn p-0 burger-icon ml-4" id="kt_header_mobile_toggle">
+				<!-- <button class="btn p-0 burger-icon ml-4" id="kt_header_mobile_toggle">
 					<span></span>
-				</button>
+				</button> -->
 				<!--end::Header Menu Mobile Toggle-->
 				<!--begin::Topbar Mobile Toggle-->
-				<button class="btn btn-hover-text-primary p-0 ml-2" id="kt_header_mobile_topbar_toggle">
-					<span class="svg-icon svg-icon-xl">
+				<button class="btn btn-hover-text-primary p-0 ml-2" onclick="Welding.OpenFilter()">
+					<span class="svg-icon svg-icon-xxl svg-icon-warning">
 						<!--begin::Svg Icon | path:assets/media/svg/icons/General/User.svg-->
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-								<polygon points="0 0 24 0 24 24 0 24" />
-								<path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
-								<path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z" fill="#000000" fill-rule="nonzero" />
-							</g>
+                                <rect x="0" y="0" width="24" height="24"></rect>
+                                <path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                                <path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero"></path>
+                            </g>
 						</svg>
 						<!--end::Svg Icon-->
 					</span>
@@ -1518,122 +1518,41 @@ License: You must have a valid license purchased only from themeforest(the above
 							<!--begin::Container-->
 							<div class="container" >
 								<!--begin::Dashboard-->
-								<!--begin::Row-->
-								<div class="row">
-
-									<div class="col-lg-12 col-xxl-4 order-1 order-xxl-2">
+                                <div class="row">
+                                    <div class="col-lg-12 col-xxl-4 order-1 order-xxl-2" id="SearchDiv" hidden="hidden">
 										<!--begin::List Widget 8-->
-										<div class="card card-custom card-stretch gutter-b bg-light-success">
-											<!--begin::Body-->
-											<div class="card-body pt-4">
-												<!--begin::Item-->
-                                                <div class="d-flex flex-wrap align-items-center mb-1">
-                                                    <!--begin::Symbol-->
-                                        
-                                                    <div class="symbol symbol-50 symbol-2by3 flex-shrink-0">
-                                                        <div class="symbol-label"><span class="symbol-label text-bold font-size-h4">GMAW</span></div>
-                                                    </div>
-                                                    <!--end::Symbol-->
-                                        
-                                                    <!--begin::Title-->
-                                                    <div class="d-flex flex-column ml-4 flex-grow-1 mr-2">
-                                                        <a href="#" class="text-dark-75 font-weight-bold text-hover-primary font-size-lg mb-1">ASME Sec. IX</a>
-                                                        <span class="text-primary font-weight-bold">WP03619-FG1-IX</span>
-                                                        <span class="text-muted font-weight-bold">12 Apr 2022 ~ 12 Apr 2023</span>
-                                                    </div>
-                                                    <!--end::Title-->
-                                        
-                                                    <!--begin::btn-->
-                                                    <span class="label label-lg label-success label-inline mt-lg-0 mb-lg-0 my-2 font-weight-bold py-4">ON</span>
-                                                    <!--end::Btn-->
-                                                    <p class="text-primary m-0 pt-5 font-weight-bolder font-size-h6">P No. and Group No.</p>
-													<p class="text-dark font-weight-normal" style="margin-bottom: 0.3rem;">P‐No. 1 to P‐No. 15F, P‐No. 34, and P‐No. 41 to P‐No. 49</p>
-
-
-                                                    <div class="col-12" style="padding-right: 0px;padding-left: 0px;">
-                                                        <div class="d-flex flex-column flex-grow-1 mr-1">
-                                                            <span class="text-primary font-weight-bolder font-size-h6">F No.</span>
-                                                            <span class="text-dark font-weight-normal">F-No. 4 & F-No. 1 - 3 (w/ backing)</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-12" style="padding-right: 0px;padding-left: 0px;"> 
-                                                        <div class="row">
-                                                            <div class="col-6">
-                                                                <div class="d-flex flex-column flex-grow-1 mr-1 mt-2">
-                                                                    <span class="text-primary font-weight-bolder font-size-h6">Backing</span>
-                                                                    <span class="text-dark font-weight-normal">With/ Without</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6" >
-                                                                <div class="d-flex flex-column flex-grow-1 mr-1 mt-2">
-                                                                    <span class="text-primary font-weight-bolder font-size-h6">Position</span>
-                                                                    <span class="text-dark font-weight-normal">F, V, O</span>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-6">
-                                                                <div class="d-flex flex-column flex-grow-1 mr-1 mt-2">
-                                                                    <span class="text-primary font-weight-bolder font-size-h6">Thk</span>
-                                                                    <span class="text-dark font-weight-normal">Min: -</span>
-                                                                    <span class="text-dark font-weight-normal">Max: Unlimited</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <div class="d-flex flex-column flex-grow-1 mr-1 mt-2">
-                                                                    <span class="text-primary font-weight-bolder font-size-h6">OD</span>
-                                                                    <span class="text-dark font-weight-normal">120</span>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                        </div>
-                                                       
-                                                    </div>
-                                                    
-                                                </div>
-												<!--end::Item-->
-											</div>
-											<!--end::Body-->
-										</div>
+										<div class="form-group" style="margin-bottom: 1.3rem;">
+                                            <label>Search<span class="text-danger">*</span></label>
+                                            <select class="form-control cbb" id="cbbEmployee" style="width: 100%;" onchange="Welding.OnchangeEmployee()"></select>
+                                        </div>
 										<!--end: Card-->
 										<!--end::List Widget 8-->
 									</div>
+                                </div>
+								<!--begin::Row-->
+								<div class="row" id="BodyUtama">
 
-                                    <div class="col-lg-12 col-xxl-4 order-1 order-xxl-22">
-                                        <div class="card card-custom card-stretch gutter-b bg-light-danger">
-											<!--begin::Body-->
-											<div class="card-body pt-4">
-												<!--begin::Item-->
+									<!-- <div class="col-lg-12 col-xxl-4 order-1 order-xxl-2">
+                                        <div class="card card-custom card-stretch gutter-b bg-light-success" style="margin-bottom: 10px">
+                                            <div class="card-body pt-4">
                                                 <div class="d-flex flex-wrap align-items-center mb-1">
-                                                    <!--begin::Symbol-->
-                                        
                                                     <div class="symbol symbol-50 symbol-2by3 flex-shrink-0">
                                                         <div class="symbol-label"><span class="symbol-label text-bold font-size-h4">GMAW</span></div>
                                                     </div>
-                                                    <!--end::Symbol-->
-                                        
-                                                    <!--begin::Title-->
                                                     <div class="d-flex flex-column ml-4 flex-grow-1 mr-2">
                                                         <a href="#" class="text-dark-75 font-weight-bold text-hover-primary font-size-lg mb-1">ASME Sec. IX</a>
                                                         <span class="text-primary font-weight-bold">WP03619-FG1-IX</span>
                                                         <span class="text-muted font-weight-bold">12 Apr 2022 ~ 12 Apr 2023</span>
                                                     </div>
-                                                    <!--end::Title-->
-                                        
-                                                    <!--begin::btn-->
-                                                    <span class="label label-lg label-danger label-inline mt-lg-0 mb-lg-0 my-2 font-weight-bold py-4">OFF</span>
-                                                    <!--end::Btn-->
+                                                    <span class="label label-lg label-success label-inline mt-lg-0 mb-lg-0 my-2 font-weight-bold py-4">ON</span>
                                                     <p class="text-primary m-0 pt-5 font-weight-bolder font-size-h6">P No. and Group No.</p>
-													<p class="text-dark font-weight-normal" style="margin-bottom: 0.3rem;">P‐No. 1 to P‐No. 15F, P‐No. 34, and P‐No. 41 to P‐No. 49</p>
-
-
+                                                    <p class="text-dark font-weight-normal" style="margin-bottom: 0.3rem;">P‐No. 1 to P‐No. 15F, P‐No. 34, and P‐No. 41 to P‐No. 49</p>
                                                     <div class="col-12" style="padding-right: 0px;padding-left: 0px;">
                                                         <div class="d-flex flex-column flex-grow-1 mr-1">
                                                             <span class="text-primary font-weight-bolder font-size-h6">F No.</span>
                                                             <span class="text-dark font-weight-normal">F-No. 4 & F-No. 1 - 3 (w/ backing)</span>
                                                         </div>
                                                     </div>
-
                                                     <div class="col-12" style="padding-right: 0px;padding-left: 0px;"> 
                                                         <div class="row">
                                                             <div class="col-6">
@@ -1648,7 +1567,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                     <span class="text-dark font-weight-normal">F, V, O</span>
                                                                 </div>
                                                             </div>
-
+                                    
                                                             <div class="col-6">
                                                                 <div class="d-flex flex-column flex-grow-1 mr-1 mt-2">
                                                                     <span class="text-primary font-weight-bolder font-size-h6">Thk</span>
@@ -1668,90 +1587,14 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                     
                                                 </div>
-												<!--end::Item-->
-											</div>
-											<!--end::Body-->
-										</div>
-                                    </div>
-
-                                    <div class="col-lg-12 col-xxl-4 order-1 order-xxl-22">
-                                        <div class="card card-custom card-stretch gutter-b bg-light-danger">
-											<!--begin::Body-->
-											<div class="card-body pt-4">
-												<!--begin::Item-->
-                                                <div class="d-flex flex-wrap align-items-center mb-1">
-                                                    <!--begin::Symbol-->
-                                        
-                                                    <div class="symbol symbol-50 symbol-2by3 flex-shrink-0">
-                                                        <div class="symbol-label"><span class="symbol-label text-bold font-size-h4">GMAW</span></div>
-                                                    </div>
-                                                    <!--end::Symbol-->
-                                        
-                                                    <!--begin::Title-->
-                                                    <div class="d-flex flex-column ml-4 flex-grow-1 mr-2">
-                                                        <a href="#" class="text-dark-75 font-weight-bold text-hover-primary font-size-lg mb-1">ASME Sec. IX</a>
-                                                        <span class="text-primary font-weight-bold">WP03619-FG1-IX</span>
-                                                        <span class="text-muted font-weight-bold">12 Apr 2022 ~ 12 Apr 2023</span>
-                                                    </div>
-                                                    <!--end::Title-->
-                                        
-                                                    <!--begin::btn-->
-                                                    <span class="label label-lg label-danger label-inline mt-lg-0 mb-lg-0 my-2 font-weight-bold py-4">OFF</span>
-                                                    <!--end::Btn-->
-                                                    <p class="text-primary m-0 pt-5 font-weight-bolder font-size-h6">P No. and Group No.</p>
-													<p class="text-dark font-weight-normal" style="margin-bottom: 0.3rem;">P‐No. 1 to P‐No. 15F, P‐No. 34, and P‐No. 41 to P‐No. 49</p>
-
-
-                                                    <div class="col-12" style="padding-right: 0px;padding-left: 0px;">
-                                                        <div class="d-flex flex-column flex-grow-1 mr-1">
-                                                            <span class="text-primary font-weight-bolder font-size-h6">F No.</span>
-                                                            <span class="text-dark font-weight-normal">F-No. 4 & F-No. 1 - 3 (w/ backing)</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-12" style="padding-right: 0px;padding-left: 0px;"> 
-                                                        <div class="row">
-                                                            <div class="col-6">
-                                                                <div class="d-flex flex-column flex-grow-1 mr-1 mt-2">
-                                                                    <span class="text-primary font-weight-bolder font-size-h6">Backing</span>
-                                                                    <span class="text-dark font-weight-normal">With/ Without</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6" >
-                                                                <div class="d-flex flex-column flex-grow-1 mr-1 mt-2">
-                                                                    <span class="text-primary font-weight-bolder font-size-h6">Position</span>
-                                                                    <span class="text-dark font-weight-normal">F, V, O</span>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-6">
-                                                                <div class="d-flex flex-column flex-grow-1 mr-1 mt-2">
-                                                                    <span class="text-primary font-weight-bolder font-size-h6">Thk</span>
-                                                                    <span class="text-dark font-weight-normal">Min: -</span>
-                                                                    <span class="text-dark font-weight-normal">Max: Unlimited</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <div class="d-flex flex-column flex-grow-1 mr-1 mt-2">
-                                                                    <span class="text-primary font-weight-bolder font-size-h6">OD</span>
-                                                                    <span class="text-dark font-weight-normal">120</span>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                        </div>
-                                                       
-                                                    </div>
-                                                    
-                                                </div>
-												<!--end::Item-->
-											</div>
-											<!--end::Body-->
-										</div>
-                                    </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
 								</div>
 								<!--end::Row-->
 								<!--end::Dashboard-->
 							</div>
+                            
 							<!--end::Container-->
 						</div>
 						<!--end::Entry-->
@@ -1778,6 +1621,8 @@ License: You must have a valid license purchased only from themeforest(the above
 			</div>
 			<!--end::Page-->
 		</div>
+
+    
 		<!--end::Main-->
 		<!-- begin::User Panel-->
 		<div id="kt_quick_user" class="offcanvas offcanvas-right p-10">
@@ -3005,6 +2850,9 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!--end::Sticky Toolbar-->
 		<!--begin::Demo Panel-->
 		
+
+
+
 		<!--end::Demo Panel-->
 		<script>var HOST_URL = "https://keenthemes.com/metronic/tools/preview";</script>
 		<!--begin::Global Config(global config for global JS scripts)-->
@@ -3029,6 +2877,188 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!--begin::Page Scripts(used by this page)-->
 		<!-- <script src="assets/js/pages/widgets.js"></script> -->
 		<!--end::Page Scripts-->
+
+
+        
+        <script>
+            //Form Load
+            $(document).ready(function () {
+
+                Welding.GetData()
+            
+            });
+        
+            function Welding(){}
+            
+
+            Welding.IsFilter = 0
+            Welding.OpenFilter = function () {
+                if (Welding.IsFilter == 0) {
+                    $('#SearchDiv').removeAttr('hidden')
+                    Welding.IsFilter = 1
+                    // $('#btnFilter').removeClass('btn btn-icon btn-light-white h-40px w-40px').addClass('btn btn-icon btn-primary h-40px w-40px')
+                }
+                else {
+                    $('#SearchDiv').attr('hidden', 'hidden')
+                    Welding.IsFilter = 0
+                    // $('#btnFilter').removeClass('btn btn-icon btn-primary h-40px w-40px').addClass('btn btn-icon btn-light-white h-40px w-40px')
+                }
+            }
+
+
+
+            Welding.Data = []
+            Welding.GetData = function(){
+                Loading.BlockPage()
+                fetch("https://script.google.com/macros/s/AKfycbx6L_kCm8rX4cTj1kAqwfvfmCerb5acqgCrIOekbcbGQZsT8sVsQ33FcPg3uBVxGpoE/exec")
+                    .then(res => res.json())
+                    .then(data => {
+                        Welding.Data = data.tWeldingCertificate
+                        console.log(Welding.Data)
+                        Welding.GetBadgeId()
+                        
+
+                        Loading.UnblockPage_()
+                    });
+            }
+        
+            Welding.GetBadgeId = function(){
+                var datas  = Welding.Data
+                //distinct array with single value
+                //let BadgeId = [...new Set(datas.map(item => item.BadgeId))];
+                //console.log(BadgeId);
+            
+                //distinct array with multiple value
+                let result = datas.reduce((prev, el) =>{
+                    if(prev.some(o => o.BadgeId == el.BadgeId && o.WelderName == el.WelderName && o.StampNumber == el.StampNumber))
+                        return prev;
+                    return [...prev, {BadgeId:el.BadgeId, WelderName:el.WelderName,StampNumber:el.StampNumber}]
+                }, []);
+
+                var cbbEmployee = $('#cbbEmployee');
+                cbbEmployee.empty();
+                cbbEmployee.append("<option value=''>Choose Employee</option>");
+
+                $.each(result, function (i, st) {
+                    cbbEmployee.append("<option value=\"" + st.BadgeId + "\">" + st.BadgeId + "-" + st.WelderName + " [" + st.StampNumber + "]</option>")
+                })
+                console.log(result);
+            }
+
+            Welding.OnchangeEmployee = function(){
+                
+                var BadgeId = $('#cbbEmployee').val()
+                Welding.GetDataPerBadgeId(BadgeId)
+            }
+        
+        
+            Welding.GetDataPerBadgeId = function(BadgeId){
+                Loading.BlockPage()
+                var datas  = Welding.Data
+                var AfterFilter =  datas.filter(function(datas) {
+                    return datas.BadgeId == BadgeId;
+                });
+
+
+                $('#SpanEmployeeNumber').html(AfterFilter[0].BadgeId+'-'+AfterFilter[0].WelderName+' ['+AfterFilter[0].StampNumber+']')
+
+                var BodyUtama = $('#BodyUtama');
+                BodyUtama.empty();
+                var html= ''
+                $.each(AfterFilter, function (i, st) {
+
+                    var Color = 'success'
+                    if(CheckisExpired(st.ExpiredDate) == 1){
+                        Color = 'danger'
+                    }
+                    html +='<div class="col-lg-12 col-xxl-4 order-1 order-xxl-2">'
+                        html +='<div class="card card-custom card-stretch gutter-b bg-light-'+Color+'" style="margin-bottom: 10px">'
+                            html +='<div class="card-body pt-4">'
+                                html +='<div class="d-flex flex-wrap align-items-center mb-1">'
+                                    html +='<div class="symbol symbol-50 symbol-2by3 flex-shrink-0">'
+                                        html +='<div class="symbol-label"><span class="symbol-label text-bold font-size-h4">'+st.WeldingProcess+'</span></div>'
+                                    html +='</div>'
+                                    html +='<div class="d-flex flex-column ml-4 flex-grow-1 mr-2">'
+                                        html +='<a href="#" class="text-dark-75 font-weight-bold text-hover-primary font-size-lg mb-1">'+st.Code+'</a>'
+                                        html +='<span class="text-primary font-weight-bold">'+st.CertificateNumber+'</span>'
+                                        html +='<span class="text-muted font-weight-bold">'+ConvertDate(st.StartDate)+' ~ '+ConvertDate(st.ExpiredDate)+'</span>'
+                                    html +='</div>'
+                                    html +='<span class="label label-lg label-'+Color+' label-inline mt-lg-0 mb-lg-0 my-2 font-weight-bold py-4">'+st.StatusCertificate+'</span>'
+                                    html +='<p class="text-primary m-0 pt-5 font-weight-bolder font-size-h6">P No. and Group No.</p>'
+                                    html +='<p class="text-dark font-weight-normal" style="margin-bottom: 0.3rem;">'+st.PNumber_GrNumber+'</p>'
+                                    html +='<div class="col-12" style="padding-right: 0px;padding-left: 0px;">'
+                                        html +='<div class="d-flex flex-column flex-grow-1 mr-1">'
+                                            html +='<span class="text-primary font-weight-bolder font-size-h6">F No.</span>'
+                                            html +='<span class="text-dark font-weight-normal">'+st.FNumber+'</span>'
+                                        html +='</div>'
+                                    html +='</div>'
+                                    html +='<div class="col-12" style="padding-right: 0px;padding-left: 0px;"> '
+                                        html +='<div class="row">'
+                                            html +='<div class="col-6">'
+                                                html +='<div class="d-flex flex-column flex-grow-1 mr-1 mt-2">'
+                                                    html +='<span class="text-primary font-weight-bolder font-size-h6">Backing</span>'
+                                                    html +='<span class="text-dark font-weight-normal">'+st.Backing+'</span>'
+                                                html +='</div>'
+                                            html +='</div>'
+                                            html +='<div class="col-6" >'
+                                                html +='<div class="d-flex flex-column flex-grow-1 mr-1 mt-2">'
+                                                    html +='<span class="text-primary font-weight-bolder font-size-h6">Position</span>'
+                                                    html +='<span class="text-dark font-weight-normal">'+st.Position1+'</span>'
+                                                html +='</div>'
+                                            html +='</div>'
+
+                                            html +='<div class="col-6">'
+                                                html +='<div class="d-flex flex-column flex-grow-1 mr-1 mt-2">'
+                                                    html +='<span class="text-primary font-weight-bolder font-size-h6">Thk</span>'
+                                                    html +='<span class="text-dark font-weight-normal">Min: '+st.ThkMin+'</span>'
+                                                    html +='<span class="text-dark font-weight-normal">Max: '+st.ThkMax+'</span>'
+                                                html +='</div>'
+                                            html +='</div>'
+                                            html +='<div class="col-6">'
+                                                html +='<div class="d-flex flex-column flex-grow-1 mr-1 mt-2">'
+                                                    html +='<span class="text-primary font-weight-bolder font-size-h6">OD</span>'
+                                                    html +='<span class="text-dark font-weight-normal">'+st.MinOD+'</span>'
+                                                html +='</div>'
+                                            html +='</div>'
+                                            
+                                        html +='</div>'
+                                    
+                                    html +='</div>'
+                                    
+                                html +='</div>'
+                            html +='</div>'
+                        html +='</div>'
+                    html +='</div>'
+                })
+                BodyUtama.append(html)
+
+                console.log(AfterFilter);
+                Loading.UnblockPage_()
+            }
+        
+            function ConvertDate(Dates){
+                var now = new Date(Dates)
+                var mon = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+                return (now.getDate()  + ' ' + mon[now.getMonth()] + ' ' + now.getFullYear())
+            }
+
+            function CheckisExpired(Dates){
+                var value = new Date(Dates)
+                var now = new Date()
+
+                var isExpired = 0
+                if(value < now)
+                {
+                    isExpired =1
+                }
+
+                return isExpired
+            }
+
+        
+            
+        </script>
 	</body>
 	<!--end::Body-->
 </html>
