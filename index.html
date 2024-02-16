@@ -2940,7 +2940,9 @@ License: You must have a valid license purchased only from themeforest(the above
                 cbbEmployee.append("<option value=''>Choose Employee</option>");
 
                 $.each(result, function (i, st) {
-                    cbbEmployee.append("<option value=\"" + st.BadgeId + "\">" + st.BadgeId + "-" + st.WelderName + " [" + st.StampNumber + "]</option>")
+			if(st.BadgeId != undefined){
+				cbbEmployee.append("<option value=\"" + st.BadgeId + "\">" + st.BadgeId + "-" + st.WelderName + " [" + st.StampNumber + "]</option>")
+			}
                 })
                 console.log(result);
             }
