@@ -58179,7 +58179,7 @@ body {
   background: #F2F3F7; }
 
 .wrapper {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   border-radius: 1.25rem; }
 
 @media (min-width: 992px) {
